@@ -1,0 +1,30 @@
+==================================================
+wiinunchuck lib
+==================================================
+= Copyright (c) Davide Gironi, 2012              =
+= http://davidegironi.blogspot.it/               =
+==================================================
+
+
+Wii Nunchuck AVR Atmega library.
+Nunchuck is a wii 2-axis joystick, two buttons and a 3 axis 2g accelerometer, 
+capable of I2C can communicate with it.
+
+Calibration is suggested to get more accurate parameters.
+To calibrate the device read the raw values using the get non calibrated mode
+then calculate the offset.
+User can enable a avarage filter on accellerometer measurements.
+An attitude (roll and pitch) estimation function can be enabled. 
+
+Setup parameters are stored in file wiinunchuck.h
+
+
+Devel Notes
+-----------
+This library was developed on Eclipse, built with avr-gcc on Atmega8 @ 1MHz.
+If you include <math.h> add libm library to linker.
+
+
+License
+-------
+Please refer to LICENSE file for licensing information.
